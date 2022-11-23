@@ -1,6 +1,7 @@
 void main(List<String> args) {
   int a = 21;
   int b = 43;
+  print("a: $a, b: $b");
 
       // METHOD-I -->
   // a = a^b;

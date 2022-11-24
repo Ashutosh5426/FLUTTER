@@ -31,12 +31,20 @@ void main() {
   var arr = [3, -5, 0, -3, 5, 2, -2];
   int length = arr.length;
 
-  for(int i=0; i<length; i++){
+  for(int i=0; i<length-1; i+=2){
     int min, max;
     min = max = i;
-    for(int j=0; j<length; j++){
+    for(int j=i+1; j<length; j++){
       if(arr[min] > arr[j]) min = j;
       if(arr[max] < arr[j]) max = j;
     }
+    int temp = arr[max];
+    arr[max] = arr[i];
+    arr[i] = temp;
+
+    temp = arr[min];
+    arr[min] = arr[i+1];
+    arr[i+1] = temp;
   }
+  print(arr);
 }

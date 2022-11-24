@@ -5,7 +5,7 @@ void main() {
 //<--------------------------------------------------------------------------------------------------------- STRINGS PROPERTIES --------------------------- ---------------------------------------------------------------------------->
 
   //  1. codeUnits- Returns an unmodifiable list of the UTF-16 code units of this string.
-  //  print(str.codeUnits); 
+  //  print(str.codeUnits);
 
   // 2. isEmpty- Returns true if this string is empty.
   // print(str.isEmpty);
